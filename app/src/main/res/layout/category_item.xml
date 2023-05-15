@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.gridlayout.widget.GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="151dp"
+        android:layout_height="208dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardCategory"
+            android:layout_width="match_parent"
+            android:layout_height="131dp"
+            android:background="@drawable/ic_launcher_foreground"
+            android:backgroundTint="#FFFFFF"
+            app:cardCornerRadius="10dp">
+
+            <ImageView
+                android:id="@+id/categoryimg"
+                android:layout_width="match_parent"
+                android:layout_height="132dp"
+                app:srcCompat="@drawable/ic_launcher_foreground" />
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:gravity="center"
+            android:text="TextView"
+            android:textColor="#C12121"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_column="0"
+            app:layout_row="1" />
+
+    </androidx.gridlayout.widget.GridLayout>
+
+</androidx.gridlayout.widget.GridLayout>
